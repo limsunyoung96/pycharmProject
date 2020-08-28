@@ -15,11 +15,10 @@ num, str = inputStr.split()
 num = int(num)
 strPint = ""
 if num < 10:
-    for i in range(num):
-        print(str, end='')
+    print(str * num)
 elif 10 <= num < 100:
     for i in range(num):
-        print(str, ' ', end='')
+        print(str, end=',')
 else:
     for i in range(num):
-        print(str, ',', end='')
+        print(str, end='')
